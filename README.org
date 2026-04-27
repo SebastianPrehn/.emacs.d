@@ -6,7 +6,7 @@
 
 [[https://img.shields.io/badge/Supports-Emacs_30.2-blueviolet.svg?style=flat-square&logo=GNU%20Emacs&logoColor=white]]
 
-[[https://img.shields.io/github/last-commit/SebastianPrehn/.emacs.d?style=flat-square]]
+[[https://img.shields.io/github/last-commit/SebastianPrehn/.emacs.d.svg?style=flat-square]]
 
 * Introduction
 
