@@ -1,0 +1,14 @@
+#+TITLE: Elfeed
+#+AUTHOR: Sebastian Larsen Prehn
+
+I use [[https://github.com/skeeto/elfeed][Elfeed]] as my web feed, where I primarily use it to access blogs and my YouTube subscriptions that I want to keep up with.
+
+Blogs are my preferred medium, and there exists so many blogs which are both useful and thought provoking, especially in an age where the [[https://en.wikipedia.org/wiki/Enshittification][enshittification]] of the internet feels all too real.
+Blogs contain human thoughts, ideas, and the passion of someone who wants to connect with the world.
+
+I keep my YouTube subscriptions as a web feed because I otherwise end up spending too much time on YouTube feeling entrapped in their algorithm as I sometimes watched hours of content which I did not really engage with.
+While this approach leads to less organic discovery of new channels, this way encourages that I engage with those I already enjoy, while still having the option of seeing other recommended videos when
+I open the videos of those I follow.
+
+* Dependencies
+- Self-contained.

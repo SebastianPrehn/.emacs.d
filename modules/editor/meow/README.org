@@ -1,0 +1,103 @@
+#+TITLE: Meow - Modal editing
+
+[[https://github.com/meow-edit/meow][Meow]] is a modal editing mode designed to integrate cleanly with Emacs
+conventions. Unlike [[https://github.com/emacs-evil/evil][Evil]], it avoids shadowing built-in keybindings.
+
+* Key design decisions
+- [[https://github.com/meow-edit/meow/blob/master/KEYBINDING_QWERTY.org][QWERTY layout]]
+
+* Keybindings
+** Motion mode
+| Key        | Action    |
+|------------+-----------|
+| =j=        | meow-next |
+| =k=        | meow-prev |
+| =<escape>= | ignore    |
+
+** Leader (SPC)
+| Key   | Action                   |
+|-------+--------------------------|
+| =0-9= | meow-digit-argument      |
+| =/=   | meow-keypad-describe-key |
+| =?=   | meow-cheatsheet          |
+
+** Normal mode
+*** Movement
+| Key | Action            |
+|-----+-------------------|
+| =h= | meow-left         |
+| =H= | meow-left-expand  |
+| =j= | meow-next         |
+| =J= | meow-next-expand  |
+| =k= | meow-prev         |
+| =K= | meow-prev-expand  |
+| =l= | meow-right        |
+| =L= | meow-right-expand |
+
+*** Selection
+| Key   | Action                  |
+|-------+-------------------------|
+| =w=   | meow-mark-word          |
+| =W=   | meow-mark-symbol        |
+| =x=   | meow-line               |
+| =o=   | meow-block              |
+| =O=   | meow-to-block           |
+| =,=   | meow-inner-of-thing     |
+| =.=   | meow-bounds-of-thing    |
+| =[=   | meow-beginning-of-thing |
+| =]=   | meow-end-of-thing       |
+| =1-9= | meow-expand-1..9        |
+| =0=   | meow-expand-0           |
+
+*** Edit
+| Key | Action                 |
+|-----+------------------------|
+| =i= | meow-insert            |
+| =I= | meow-open-above        |
+| =a= | meow-append            |
+| =A= | meow-open-below        |
+| =c= | meow-change            |
+| =d= | meow-delete            |
+| =D= | meow-backward-delete   |
+| =s= | meow-kill              |
+| =r= | meow-replace           |
+| =p= | meow-yank              |
+| =y= | meow-save              |
+| =u= | meow-undo              |
+| =U= | meow-undo-in-selection |
+| =m= | meow-join              |
+
+*** Navigation
+| Key | Action           |
+|-----+------------------|
+| =b= | meow-back-word   |
+| =B= | meow-back-symbol |
+| =e= | meow-next-word   |
+| =E= | meow-next-symbol |
+| =f= | meow-find        |
+| =t= | meow-till        |
+| =n= | meow-search      |
+| =v= | meow-visit       |
+| =Q= | meow-goto-line   |
+| =X= | meow-goto-line   |
+
+*** Grab & selection management
+| Key | Action                |
+|-----+-----------------------|
+| =g= | meow-cancel-selection |
+| =G= | meow-grab             |
+| =R= | meow-swap-grab        |
+| =Y= | meow-sync-grab        |
+| =z= | meow-pop-selection    |
+| =;= | meow-reverse          |
+
+*** Misc
+| Key        | Action            |
+|------------+-------------------|
+| =q=        | meow-quit         |
+| ='=        | repeat            |
+| =-=        | negative-argument |
+| =<escape>= | ignore            |
+
+* Dependencies
+Self-contained.

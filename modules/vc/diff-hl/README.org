@@ -1,0 +1,24 @@
+#+TITLE: diff-hl
+#+AUTHOR: Sebastian Larsen Prehn
+
+[[https://github.com/dgutov/diff-hl][diff-hl]] is a package which highlights uncommitted changes on the side of the window, and allows one to jump between and revert them selectively.
+It also works for =Dired=.
+
+It works on "hunks", which is another word for current local versions against a version-controlled upstream.
+
+Since I want to really utilize the packages I install and enable more, I have decided to list =diff-hl='s commands in an effort to remember these exist, as well as how to invoke them.
+
+| Provided commands             | Keybinding | Explanation                                                                                                                                                       |
+|-------------------------------+------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ~diff-hl-diff-goto-hunk~      | ~C-x v =~  | Shows a side-by-side diff of the current "hunk" and the last committed version.                                                                                   |
+| ~diff-hl-revert-hunk~         | ~C-x v n~  | Reverts the current hunk to its last committed state.                                                                                                             |
+| ~diff-hl-previous-hunk~       | ~C-x v [~  | Moves the cursor to the previous hunk in the buffer.                                                                                                              |
+| ~diff-hl-next-hunk~           | ~C-x v ]~  | Moves the cursor to the next hunk in the buffer.                                                                                                                  |
+| ~diff-hl-show-hunk~           | ~C-x v *~  | Shows a popup of the hunk at point, usually in a temporary window or overlay.                                                                                     |
+| ~diff-hl-stage-current-hunk~  | ~C-x v S~  | Stages the current hunk for commit.                                                                                                                               |
+| ~diff-hl-set-reference-rev~   |            | Sets a reference revision for comparison. Normally, diff-hl compares against HEAD. With this command, one can set a specific commit or branch to compary against. |
+| ~diff-hl-reset-reference-rev~ |            | Resets the reference revision back to the default.                                                                                                                |
+| ~diff-hl-unstage-file~        |            | Unstages all changes in the current file.                                                                                                                         |
+
+I enable it globally, as more than just my code is version-controlled, and thus it is useful in almost any buffer I open.
+Hooks are added to integrate =diff-hl= with =Magit= for automatic updates.

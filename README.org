@@ -1,0 +1,36 @@
+:PROPERTIES:
+:ID:       a78c57bb-11f3-404b-b227-f904bd710de5
+:END:
+#+title: Sebastian's GNU Emacs configuration
+#+startup: nonum
+
+[[https://img.shields.io/badge/Supports-Emacs_30.2-blueviolet.svg?style=flat-square&logo=GNU%20Emacs&logoColor=white]]
+
+[[https://img.shields.io/github/last-commit/SebastianPrehn/emacs.d?style=flat-square]]
+
+* Introduction
+
+#+BEGIN_QUOTE
+Emacs: the editor where configuring it _is_ the hobby.
+#+END_QUOTE
+
+This is a GNU Emacs configuration built on top of several Emacs bankruptcies.
+Each one has left it marginally better than before, and in this newest iteration
+I embraced the module framework model used by Doom Emacs.
+My implementation is many times worse. The only contribution to the wider community is
+a cautionary tale: My Elisp-fu is hobbyist at best, and far smarter people have built
+far better configurations. Yet here we are, for it is *my* config, and it is *my*
+prerogative to roll around in the mud.
+
+My goal for this configuration is that it is *efficient*, *opinionated* and
+*reproducible*.
+
+It should be my own inadequacies that slows my programming or prose writing,
+not Emacs. It is my system and thus it should be built to *my tastes*.
+it should work not only on my workstation at home, but also on my work laptop,
+as well as my personal laptop that I use for university, and they should perform
+the same.
+
+# Local Variables:
+# flycheck-disabled-checkers: (org-lint)
+# End:

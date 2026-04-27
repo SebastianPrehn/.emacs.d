@@ -1,0 +1,64 @@
+#+TITLE: LaTeX
+#+AUTHOR: Sebastian Larsen Prehn
+
+LaTeX is a typesetting system used to produce reports, articles, slides and other types of prose often useful in an academic setting.
+It is the standard typesetting system used at SCIENCE at the University of Copenhagen, and all documents exported to PDF started their life as a .tex file on my computer.
+
+I use the [[https://www.gnu.org/software/auctex/index.html][AUCTEX]] package to enable some nice features like live preview, editing capabilities, compilation support, and it is quite extensible and customizable.
+
+=AUCTEX= offers a wide selection of options in LaTeX mode.
+
+*Compilation & Viewing:*
+- ~C-c C-c~ : Compile (prompts for selection)
+- ~C-c C-v~ : View compiled PDF
+- ~C-c C-a~ : Compile and view
+- ~C-c C-k~ : Kills compilation process
+- ~C-c C-l~ : Show log of errors
+
+*Document structure:*
+- ~C-c C-e~ : Insert environment
+- ~C-c C-s~ : Insert section/chapter/etc (prompts for level)
+- ~C-c ]~ : Close environment
+- ~C-c C-m~, ~C-c RET~ : Insert macro/command
+
+*Formatting & Fonts:*
+- ~C-c C-f C-b~ : Insert bold text
+- ~C-c C-f C-i~ : Insert italic text
+- ~C-c C-f C-e~ : Insert emphasized text
+- ~C-c C-f C-t~ : Insert typewriter/code text
+
+*Navigation:*
+- ~C-c C-n~ : Next error
+- ~C-c C-t C-s~ : Jump to section
+- ~M-x reftex-toc~ : Table of contents view
+
+=RefTeX= also offers a lot of helpful shortcuts.
+
+*Labels:*
+- ~C-c (~ : Insert label at current position
+
+*References:*
+- ~C-c )~ : Insert reference to a label
+  - ~n/p~ : Next/previous entry
+  - ~SPC~ : Show context
+  - ~RET~ : Select and insert
+  - ~f~   : Toggle follow mode
+  - ~r~   : Rescan document
+
+*Citations:*
+- ~C-c [~ : Insert citation (connects to .bib file)
+  - ~RET~ : Select entry
+  - ~m~   : Mark multiple entries
+  - ~a~   : Insert all marked entries
+  - ~u~   : Unmark
+
+*Table of Contents:*
+- ~C-c =~ : Open RefTeX TOC
+  - ~n/p~ : Next/previous entry
+  - ~RET~ : Jump to section
+  - ~f~   : Toggle follow mode
+  - ~r~   : Rescan document
+  - ~x~   : Switch to external document
+
+* Dependencies
+- [[https://www.latex-project.org/][A working LaTeX package]]

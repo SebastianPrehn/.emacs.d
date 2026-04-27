@@ -1,0 +1,12 @@
+#+TITLE: Eglot
+#+AUTHOR: Sebastian Larsen Prehn
+
+[[https://github.com/joaotavora/eglot][Eglot]] is built into Emacs and provides a lightweight, standards-compliant
+Language Server Protocol client.
+The guiding principle is to prefer built-in ~*-ts-mode~ whenever possible
+and to use hooks to automatically integrate LSP functionality with major modes.
+
+We can install grammars with the ~treesit-install-language-grammar~ command.
+
+* Dependencies
+- Core since Emacs 29, self-contained.

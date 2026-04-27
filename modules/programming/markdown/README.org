@@ -1,0 +1,9 @@
+#+TITLE: Markdown
+
+Markdown is a lightweight markup language for creating formatted text.
+It has evolved since its creation in 2004 into several variants,
+each with minor syntactic differences.
+This configuration uses [[https://jblevins.org/projects/markdown-mode/][markdown-mode]] for editing, and [[https://pandoc.org/][pandoc]] as the processor.
+
+* Dependencies
+- [[https://pandoc.org/][pandoc]]
