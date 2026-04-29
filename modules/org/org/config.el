@@ -9,7 +9,7 @@
          ("C-c a" . org-agenda)
          ("C-c l" . org-store-link))
   :custom
-  (org-directory (expand-file-name "~/Documents/org/"))
+  (org-directory (expand-file-name "~/org/"))
   (org-imenu-depth 7)
   (org-ellipsis " ▼")
   (org-special-ctrl-a/e nil)
