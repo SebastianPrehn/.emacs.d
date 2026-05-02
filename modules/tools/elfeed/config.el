@@ -26,6 +26,8 @@
           ("https://simon.peytonjones.org/feed.xml" blog research)
           ("https://johnrakestraw.com/index.xml" blog)
           ("https://weeklyrust.substack.com/feed" blog rust)
+          ("https://www.rousette.org.uk/index.xml" blog)
+          ("https://notthebe.ee/rss.xml" blog tech)
           ("https://www.youtube.com/feeds/videos.xml?channel_id=UCCbfB3cQtkEAiKfdRQnfQvw" youtube)
           ("https://www.youtube.com/feeds/videos.xml?channel_id=UC8bSNxb8Oc7b28N2TTrQC1g" youtube)
           ("https://www.youtube.com/feeds/videos.xml?channel_id=UCcoO-8J0EYQHGPFQqwmAzVQ" youtube)
