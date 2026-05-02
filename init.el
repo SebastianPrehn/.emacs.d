@@ -116,14 +116,6 @@
 (setq-default tab-width 4) ; Reasonable default tab width most languages will override
 (setq yes-or-no-p #'y-or-n-p) ; Use y/n instead of yes/no
 
-(use-package exec-path-from-shell
-  :ensure t
-  :config
-  ((dolist (var '("SSH_AUTH_SOCK" "SSH_AGENT_PID" "GPG_AGENT_INFO"))
-  (add-to-list 'exec-path-from-shell-variables var))))
-
-(when (memq window-system '(mac ns x))
-  (exec-path-from-shell-initialize))
 
 (setq backup-directory-alist '(("." . "~/.emacs-backups")))
 (setq backup-by-copying t)       ; Don't clobber symlinks
@@ -136,39 +128,11 @@
 (add-to-list 'load-path (expand-file-name "lisp/" user-emacs-directory))
 (require 'slp-modules)
 
+(elpaca-wait)
+
 ;; Declare modules
-(slp/modules!
- :editor meow
- :ui theme
- :ui modeline
- :completion vertico
- :completion marginalia
- :completion orderless
- :completion consult
- :completion embark
- :completion corfu
- :completion cape
- :completion which-key
- :completion ibuffer
- :completion tempel
- :programming eglot
- :programming markdown
- :programming latex
- :programming rust
- :programming typescript
- :programming zig
- :programming futhark
- :programming nix
- :org org
- :org org-roam
- :org org-ref
- :tools dired
- :tools elfeed
- :tools flycheck
- :spellcheck jinx
- :vc diff-hl
- :vc magit
- :social erc)
+(load (expand-file-name "local.el" user-emacs-directory) t)
+
 
 (provide 'init)
 ;;; init.el ends here

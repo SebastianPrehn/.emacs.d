@@ -4,3 +4,5 @@ private.el
 eln-cache/
 elpa/
 themes/
+recentf
+transient/
