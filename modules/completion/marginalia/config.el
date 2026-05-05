@@ -7,8 +7,13 @@
 ;;; code:
 
 (use-package marginalia
-  :config
-  (marginalia-mode 1))
+  :demand t
+  :after vertico
+  :custom
+  (marginalia-annotators '(marginalia-annotators-heavy marginalia-annotators-light nil))
+  :init
+  (marginalia-mode))
+
 
 (provide 'slp-marginalia)
 ;;; config.el ends here

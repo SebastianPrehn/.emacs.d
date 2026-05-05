@@ -5,7 +5,7 @@
 ;;; Code:
 
 (use-package corfu
-  :ensure t
+  :demand t
   :after orderless
   :custom
   (corfu-cycle t) ;; Enable cycling for `corfu-next/previous'
